@@ -9,8 +9,7 @@ const FAQS = [ { q: "Trường nào chấp nhận chứng chỉ Duolingo?", a: "
 export default function FAQSection() {
 
   // ✅ mở mặc định câu đầu
-  const [openIndex, setOpenIndex] = useState(0);
-
+const [openIndex, setOpenIndex] = useState<number | null>(0);
   return (
     <section className="bg-[#f2f4f6] w-full rounded-[40px] py-24">
 
