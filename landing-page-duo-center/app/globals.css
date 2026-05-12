@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #0DB02B;
+  --secondary: #F9D616;
+  --text-primary: #474747;
+  --font-geist-sans: Poppins,Nunito;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-on-primary: var(--text-primary);
+  --font-geist-sans: var(--font-geist-sans);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.gradient-overlay {
+    background: linear-gradient(to right, rgba(0, 52, 65, 0.9), rgba(0, 52, 65, 0.4));
+}
+.swiper-pagination {
+ --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 3px;
+  --swiper-pagination-bullet-border-radius: 4px;
+  --swiper-pagination-bullet-inactive-color: black;
+  --swiper-pagination-color: #0DB02B;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0DB02B;
+  transform: scale(1.2);
+}
+
+
+/* ================= CTA BUTTON ================= */
+
+.cta-btn {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  animation: ctaBounce 2.5s infinite;
+  transition: transform 0.3s;
+}
+
+.cta-btn:hover {
+  transform: scale(1.15);
+}
+
+/* RUN / BOUNCE */
+@keyframes ctaBounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* RING EFFECT */
+.cta-ping {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  opacity: 0.5;
+  animation: ctaPing 2s infinite;
+}
+
+@keyframes ctaPing {
+  0% {
+    transform: scale(1);
+    opacity: .6;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes zoomPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-zoom {
+  animation: zoomPulse 2s ease-in-out infinite;
+}
+.swiper-horizontal .swiper-button-prev{
+  display: none;
+}
+.swiper-horizontal .swiper-button-next{
+  display: none;
+}
