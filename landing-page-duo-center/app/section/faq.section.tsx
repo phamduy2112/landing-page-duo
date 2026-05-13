@@ -24,6 +24,7 @@ const [openIndex, setOpenIndex] = useState<number | null>(0);
           <p className="text-gray-500">
             Giải đáp những câu hỏi phổ biến nhất trước khi học.
           </p>
+          {/* <img src="" alt="" /> */}
         </div>
 
         {/* RIGHT */}

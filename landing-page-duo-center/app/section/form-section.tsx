@@ -42,27 +42,14 @@ export default function FormSection() {
       <section className="w-full md:w-1/2 relative bg-brandLightBlue">
 
         <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ5JobSJptwEXcMzfNBtf7mEiRm-p2lwtDLRMb_PUUNpyqr994uZJbGhSDyYiaFWhxsaP6E_oSjHkSO9WvMwpIucRFW21SA-yRbpuVzaFvdIS26Ltx1e6YNfihLz4NOz5SyR7801kD7b2AhUeiJ2Gnei_yOVIFqzdXYSwjL4e2n-_yqKFMiw7B_mvFzTRGODbnVHVHR_qfrm0MFXhofbdgGiHocAwKN0CxrDlJTAj5HzbjeEdonFKXkEMFXdsgRv-RCny7zXwmpMw"
+          src="
+          Screen-Shot-2026-03-26-at-14.31.23.png
+          "
           alt="Successful students studying together"
           className="w-full h-full object-cover min-h-[300px] md:min-h-[700px]"
         />
 
-        {/* overlay */}
-        <div className="absolute inset-0 bg-black/20 flex flex-col justify-end p-8 md:p-12 text-white">
-
-          <div className="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20">
-
-            <p className="text-xl font-semibold mb-2 italic">
-              "Hành trình vạn dặm bắt đầu từ một bước chân."
-            </p>
-
-            <p className="text-sm opacity-90">
-              — Tham gia cùng +1,500 học viên đã thành công.
-            </p>
-
-          </div>
-
-        </div>
+    
 
       </section>
 

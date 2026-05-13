@@ -76,7 +76,9 @@ export default function CoreValueSection() {
           <div className="relative">
 
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIuaIOPe8Wmh_7rCK5hJ8haGfrX18LNbhIV87Yb1ZJpICT3b47ji3VIeFT43mJ6_rSCMYVo8uSHYcvzXaI51qaoBLp-IWlfriw1pH7du_heS6IkjDE7PufZZOe6AocYJHPP9iS34OZh0oRVGsJ-qFap50LZPgr2VJdE4O_3xkU54SA0cPFCSRnNsDnt1XfdUCB_FSLbp733JrmQzSMZXgpTHOKg6K7N9IhlhCinYELVjlrN9ksqMyZMsmFUitqwKD8L4EL9zghN8I"
+              src="
+              https://duolingocenter.edu.vn/wp-content/uploads/2026/01/IMG_4281-768x928.png
+              "
               alt="Student studying for DET"
               className="rounded-2xl shadow-2xl"
             />

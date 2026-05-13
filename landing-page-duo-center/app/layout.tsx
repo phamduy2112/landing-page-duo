@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Poppins, Nunito } from "next/font/google";
+import FloatingCTA from "./compontent/buton.cta";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -30,7 +31,10 @@ export default function RootLayout({
       lang="en"
       className={`${poppins.variable} ${nunito.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">{children}
+
+        <FloatingCTA/>
+      </body>
     </html>
   );
 }

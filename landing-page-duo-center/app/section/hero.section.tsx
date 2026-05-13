@@ -48,7 +48,7 @@ export default function HeroSection() {
         {/* RIGHT IMAGE */}
         <div className="flex justify-center w-full lg:w-auto">
           <img
-            src="./tuyensinh.webp"
+            src="./duo-banner-1.png"
             alt="Tuyển sinh"
             className="w-[320px] sm:w-[420px] lg:w-[520px]"
           />

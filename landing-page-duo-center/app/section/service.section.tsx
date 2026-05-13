@@ -6,7 +6,7 @@ const SERVICES = [
   {
     title: "Luyện thi Chuyên sâu",
     desc: "Chiến thuật làm bài bám sát format mới nhất của DET.",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCofZI3MmXGUvLCUD3CVKJGWj258Wk9IYNCK5qnznq3cufoMRLdKDYEUyqzNa5MenTt2iakUnqIP6foLXmFkogFfqsOlzJFbwaUDh_TGVX1lob7XfxnPejHVgFcJmwOblj0WPTr9ntDwsREK8O-KWDOuZPCyxA7uh9RpAEYVyWBhwBOHo1RH3WpkpDXTK_tXm0MebDWzBV6JmRs2vlKefIZpCl-46uMMQqWAyjCYUykJykBDxhuawoHSc6ypEAc1BsDM0nlWmmKEwA",
+    img: "./dab67b76-3947-42cf-85ef-c3c2faed5e9e.png",
   },
   {
     title: "Lộ trình 1:1",
@@ -16,7 +16,7 @@ const SERVICES = [
   {
     title: "Chấm bài Chi tiết",
     desc: "Feedback ngay lập tức từ đội ngũ chuyên gia hàng đầu.",
-    img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAfnvythFYitg52m-4-7CAglVp0dWpNQbD7lymEO2rTYMcuNeyE5SIHDK7icERPlUY6VXU1hwo1-MdbdJbumVLpmsMoJjaAofQKI07E7yCwIyOGydKiEbfnq38eVgzqZuArOX_gLWoM0vX6_2befDN7dED2wqEt9jE0gr9GYqrWpdMxQBTdR4WdnPGLTI6tHomeR3oYjWAD_Nze8awxTZWxXV5O3PNqrHWGs_JaVIwioSew30dJzs9a8re50v8BUzv3yiQg369EmIw",
+    img: "./course-83.jpg",
   },
 ];
 
