@@ -64,7 +64,7 @@ export default function WhyDETSection() {
                 },
               ].map((item, i) => (
                 <div key={i} className="space-y-2">
-                  <div className="flex justify-between text-[16px]">
+                  <div className="flex justify-between text-[16px] font-bold">
                     <span>{item.title}</span>
                     <span>{item.percent}</span>
                   </div>
