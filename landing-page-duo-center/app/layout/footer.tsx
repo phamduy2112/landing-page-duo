@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
           {/* BRAND */}
           <div className="md:col-span-2">
 
-            <div className="text-2xl font-bold mb-6">
-              Duolingo Center
+            <div className="mb-4">
+             <img src="/logo-footer.png" alt="Duo Center Logo"  className="w-[130px]"/>
             </div>
 
             <p className="text-sm opacity-90 max-w-sm mb-8">
