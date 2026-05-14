@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 const VIDEOS = [
@@ -24,7 +25,7 @@ const VIDEOS = [
 export default function IntroVideoSection() {
   return (
     <section className="py-16 bg-primary text-on-primary-fixed">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* TITLE */}
         <h2 className="text-4xl font-bold mb-8 text-center text-white">
@@ -84,10 +85,13 @@ export default function IntroVideoSection() {
             ))}
 
             {/* BUTTON */}
-            <div>
-              <button className="bg-secondary w-full text-on-secondary px-6 py-4 rounded-lg font-label-md hover:bg-secondary-container transition-all">
+            <div className="mt-2">
+              <Link
+              
+              href={"https://www.tiktok.com/@duolingo_center?fbclid=IwY2xjawRwxShleHRuA2FlbQIxMABicmlkETFWRUphNjF6cGVFcUxXaHE1c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmEyQgJYK8LW9-YGexjd33PEBVvfcBvPgmEd59aAKfw11Xkesi_Es37mh6O8_aem_YWdncwAnPcOwoHVw-8fcM9BZRKy8&brid=YWdncwFlJLXeqBtibylR8Uo9XnRx"}
+              className="bg-secondary block w-full text-center text-on-secondary px-6 py-4 rounded-lg font-label-md hover:bg-secondary-container transition-all">
                 Xem thêm
-              </button>
+              </Link>
             </div>
 
           </div>

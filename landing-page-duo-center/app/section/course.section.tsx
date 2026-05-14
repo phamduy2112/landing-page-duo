@@ -82,7 +82,7 @@ export default function CoursesSection() {
   return (
     <section
       id="courses"
-      className="max-w-7xl m-auto py-12 container scroll-mt-30"
+      className="max-w-7xl m-auto py-12 container scroll-mt-30 px-6"
     >
       {/* TITLE */}
       <div className="flex justify-between items-end mb-8">

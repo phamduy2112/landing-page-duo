@@ -1,62 +1,164 @@
 "use client";
+const getEffectClass = (shape: string) => {
+  switch (shape) {
+    case "circle":
+      return "rounded-full";
+    case "square":
+      return "rounded-none";
+    default:
+      return "rounded-[3rem]";
+  }
+};
 
-import React from "react";
+const slides = [
+{
+  badge: "Mở lối tương lai",
+  title: "Cùng Duo Center chinh phục DET",
+  desc: "Duolingo Center đồng hành cùng học viên chinh phục Duolingo English Test bằng lộ trình tinh gọn, chiến thuật rõ ràng và mục tiêu điểm số cụ thể cho du học, xét tuyển và hồ sơ quốc tế.",
+  benefits: [
+    "Lộ trình cá nhân hóa theo mục tiêu điểm",
+    "Chiến thuật làm bài DET chuẩn quốc tế",
+    "Tăng band nhanh với luyện đề thực chiến",
+  ],
+  image: "/duo-banner-1.png",
+  shape: "circle",
+}
+  // {
+  //   badge: "LỘ TRÌNH HỌC IELTS CÙNG SMARTKIDS",
+  //   title: "CÁ NHÂN HÓA LỘ TRÌNH HỌC IELTS CÙNG SMARTKIDS",
+  //   desc: "Giúp trẻ tự tin giao tiếp và thể hiện bản thân",
+  //   benefits: [
+  //     "Lộ trình được cá nhân hóa - Phù hợp với mỗi học viên",
+  //     "Giáo viên tận tâm - Hỗ trợ từng bước tiến bộ",
+  //     "Học đúng trọng tâm - Bứt phá điểm số",
+  //     "Theo dõi & đánh giá tiến độ liên tục ",
+  //   ],
+  //   image: "/tuyensinh.png",
+  //       shape: "square", // 👈 vuông
 
+  // },
+  // {
+  //   badge: "GIỚI THIỆU SMARTKIDS",
+  //   title: "SMARTKIDS HỌC THÔNG MINH  - VỮNG CHẮC TƯƠNG LAI",
+  //   desc: "Giúp trẻ tự tin giao tiếp và thể hiện bản thân",
+  //   benefits: [
+  //     "Trung tâm giáo dục chất lượng cao",
+  //     "Đa môn học: Toán – Lý – Hóa – Văn – Anh – Năng khiếu",
+  //     "Lớp nhóm nhỏ (~6 học sinh) - theo sát từng học viên",
+  //     "Hệ thống camera minh bạch – phụ huynh an tâm theo dõi",
+  //   ],
+  //   image: "/tuyensinh.png",
+  //       shape: "square", // 👈 vuông
+
+  // },
+];
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import {  Pagination, Autoplay } from "swiper/modules";
+import Image from "next/image";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+const getShapeClass = (shape: string) => {
+  switch (shape) {
+    case "circle":
+      return "w-[500px] h-[500px] rounded-full";
+    case "square":
+      return "w-full h-[500px] rounded-3xl";
+    default:
+      return "w-full h-[500px] rounded-3xl";
+  }
+};
+
+const getBgClass = (shape: string) => {
+  return shape === "circle" ? "rounded-full" : "rounded-3xl";
+};
 export default function HeroSection() {
   return (
-    <section className="relative w-full mx-auto flex items-center overflow-hidden">
-        <div className="max-w-7xl mx-auto">
+    <section className=" bg-gradient-to-b from-white to-[#faf7ff]">
+      <Swiper
+        modules={[ Pagination, Autoplay]}
+        autoplay={{ delay: 100000 }}
+        pagination={{ clickable: true }}
+        navigation
+        loop
+        className="max-w-7xl h-[800px] banner-smartkids"
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center h-full">
 
-                  <div className="absolute inset-0 -z-10">
-        <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlaaSIoG2OocLbOkoRsYgGl6xeHWy7j2wWxicuoSKmWDw9WMvikc_JESt0_TqcArmv2X0U6sv2b4Tqaajh_ABXvygECvv0UIPAWP7NbrTmzkyBAErBYUdl2m7F7zCG-smAm4lnmw_-AIX-sThwDY79Fc1ouapzl4-bh9ZTc5j0Gh4v8Bhwg00UVN7NDaf_5MX-bVrB9L6dMmLIwlImald0mZdMLUwWk5ZvudjCs1dSDNqhtNnlR3wfM7cq1MxXJl57i14Sa8pWvI8"
-          alt="Modern Learning Space"
-          className="w-full h-full object-cover"
-        />
+              {/* LEFT */}
+              <div>
+                <span className="text-primary font-bold">
+                  {slide.badge}
+                </span>
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#003441]/90 to-[#003441]/40" />
-      </div>
+                <h1 className="text-5xl font-bold leading-tight mb-3">
+                  {slide.title}
+                </h1>
 
-      {/* Content */}
-      <div className="w-full px-6 pt-20 flex flex-col lg:flex-row items-center gap-12 relative z-10">
+                <p className="text-lg text-gray-600 mb-4">
+                  {slide.desc}
+                </p>
 
-        {/* LEFT */}
-        <div className="max-w-2xl text-white text-center lg:text-left">
-          <h1 className="text-[48px] font-bold mb-4 leading-tight">
-            Chinh phục DET.
-            <br />
-            Mở cửa tương lai.
-          </h1>
+                <div className="space-y-2 text-gray-700 text-sm mb-8">
+                  {slide.benefits.map((item, i) => (
+                    <p key={i}>✔ {item}</p>
+                  ))}
+                </div>
 
-          <p className=" text-[18px] mb-8 opacity-90 w-full lg:w-[90%]">
-            Luyện thi Duolingo English Test chuyên sâu với lộ trình cá nhân hóa,
-            cam kết đầu ra nhanh nhất cho du học và xét tuyển.
-          </p>
+                <div className="flex gap-4">
+                  <button className="px-8 py-4 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition">
+                    Đăng Ký Tư Vấn Ngay
+                  </button>
 
-          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-            <button className="bg-primary text-white cursor-pointer px-8 py-3 rounded-xl shadow-xl hover:brightness-105 transition">
-              Bắt đầu ngay
-            </button>
+                
+                </div>
+              </div>
 
-            <button className="border-2 border-white/30 cursor-pointer px-8 py-3 rounded-xl hover:bg-white/10 transition">
-              Xem lộ trình
-            </button>
-          </div>
-        </div>
+              {/* RIGHT IMAGE */}
+              <div className="relative flex justify-center items-center mt-20">
 
-        {/* RIGHT IMAGE */}
-        <div className="flex justify-center w-full lg:w-auto">
-          <img
-            src="./duo-banner-1.png"
-            alt="Tuyển sinh"
-            className="w-[320px] sm:w-[420px] lg:w-[520px]"
-          />
-        </div>
-      </div>
-        </div>
-      {/* Background */}
+  {/* Background */}
+  <div
+    className={`
+      absolute w-[460px] h-[460px] bg-primary/10
+      ${getBgClass(slide.shape)}
+    `}
+  />
 
+  {/* Glow */}
+  <div
+    className={`
+      absolute w-[500px] h-[500px]
+      bg-primary/20 blur-3xl
+      ${getBgClass(slide.shape)}
+    `}
+  />
+
+  {/* Image */}
+  <div
+    className={`
+      relative 
+      ${getShapeClass(slide.shape)}
+    `}
+  >
+    <Image
+      src={slide.image}
+      alt="banner"
+      fill
+      className="object-contain"
+    />
+  </div>
+
+</div>
+
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 }

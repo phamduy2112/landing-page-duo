@@ -5,17 +5,17 @@ import React from "react";
 const SERVICES = [
   {
     title: "Luyện thi Chuyên sâu",
-    desc: "Chiến thuật làm bài bám sát format mới nhất của DET.",
+    desc: "Chiến thuật làm bài bám sát format mới nhất của DET",
     img: "./dab67b76-3947-42cf-85ef-c3c2faed5e9e.png",
   },
   {
     title: "Lộ trình 1:1",
-    desc: "Thiết kế riêng theo trình độ và mục tiêu cá nhân.",
+    desc: "Feedback ngay lập tức từ đội ngũ chuyên gia tại Duo Center",
     img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAhd7bfbCWltChufOE4EzifaGPSOyjXoN9OwMcsg0KxycT7_jOEBQhPhGLntzJKaCXauUepFu7Osf6uHjwghapH8gLkI9iWtcN_KvRC3qu2v2gSAj_OB6WLT20Hbjos7ylJdczwBu61aRHQQRNo6aZKNBAEYy298qa03tEPeYURSizUX5Tel0oMTl9XF9NpPm_dPE2E2_HyeKk4fFOEQYDsB5vl2JSXKpi9Ydbx9vqDNlRBLUvYkc5WZADh_3Vpg-JiD63YfjcAJ_o",
   },
   {
     title: "Chấm bài Chi tiết",
-    desc: "Feedback ngay lập tức từ đội ngũ chuyên gia hàng đầu.",
+    desc: "Feedback ngay lập tức từ đội ngũ chuyên gia hàng đầu",
     img: "./course-83.jpg",
   },
 ];
@@ -23,7 +23,7 @@ const SERVICES = [
 export default function ServicesSection() {
   return (
     <section className="py-[96px] bg-surface" id="services">
-      <div className="max-w-7xl mx-auto px-margin-desktop">
+      <div className="max-w-7xl px-6 mx-auto px-margin-desktop">
 
         {/* Title */}
         <div className="text-center mb-10">

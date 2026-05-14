@@ -7,7 +7,7 @@ const FEATURES = [
   {
     icon: FaRocket,
     title: "Tốc độ",
-    desc: "Lộ trình tinh gọn giúp tăng điểm chỉ sau 4 tuần ôn luyện tập trung.",
+    desc: "Lộ trình cá nhân hóa theo năng lực, giúp học viên học đúng trọng tâm và tối ưu kết quả DET",
   },
   {
     icon: FaBolt,
@@ -17,12 +17,15 @@ const FEATURES = [
   {
     icon: FaBullseye,
     title: "Chính xác",
-    desc: "Hệ thống bài tập bám sát 100% thuật toán AI của bài thi thật.",
+    desc: "Kho bài luyện mô phỏng sát trải nghiệm làm bài DET thực tế",
   },
   {
     icon: FaUserCheck,
     title: "Đặc quyền",
-    desc: "Feedback 1:1 từ chuyên gia cho từng kỹ năng Speaking và Writing.",
+    desc: "Feedback 1-1 từ chuyên gia cho từng kỹ năng"
+    
+    
+    ,
   },
 ];
 
@@ -30,7 +33,7 @@ export default function FeaturesSection() {
   
   return (
     <section className="py-[96px] bg-[#f2f4f6]">
-      <div className="max-w-7xl mx-auto px-margin-desktop">
+      <div className="max-w-7xl mx-auto px-margin-desktop px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
        {FEATURES.map((item, index) => {

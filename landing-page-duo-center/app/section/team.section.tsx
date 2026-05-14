@@ -62,7 +62,7 @@ const teachers = [
 
 export default function TeamSection() {
   return (
-    <section className="max-w-7xl m-auto py-10 container scroll-mt-30" id="tutors">
+    <section className="max-w-7xl px-6 m-auto py-10 container scroll-mt-30" id="tutors">
       <h2 className="text-3xl font-bold text-center mb-2">
         500+ giáo viên truyền cảm hứng
       </h2>

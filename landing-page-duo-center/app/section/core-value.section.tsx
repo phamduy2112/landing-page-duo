@@ -8,24 +8,24 @@ const VALUES = [
   {
     icon: FaBolt,
     title: "Speed (Nhanh)",
-    desc: "Phương pháp học trọng tâm, giúp tăng điểm DET nhanh chóng chỉ sau 4-8 tuần luyện tập.",
+    desc: "Phương pháp học trọng tâm, giúp tăng điểm DET nhanh chóng",
   },
   {
     icon: FaBullseye,
     title: "Precision (Đúng format)",
-    desc: "Mọi bài giảng đều bám sát 100% format bài thi AI-based của Duolingo English Test.",
+    desc: "Lộ trình học bám sát đặc thù bài thi DET, giúp học viên hiểu rõ cách làm bài và cách tối ưu điểm số",
   },
   {
     icon: FaUserCheck,
     title: "Personalization (Cá nhân hóa)",
-    desc: "Tập trung khắc phục điểm yếu riêng của từng học viên thông qua feedback 1:1.",
+    desc: "Không học chung một lộ trình đại trà, học viên được góp ý 1-1 để sửa lỗi đúng trọng tâm",
   },
 ];
 
 export default function CoreValueSection() {
   return (
     <section className="py-[96px] bg-primary text-white" id="core-value">
-      <div className="max-w-7xl mx-auto px-margin-desktop">
+      <div className="max-w-7xl px-6 mx-auto px-margin-desktop">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -41,8 +41,8 @@ export default function CoreValueSection() {
             </h2>
 
             <p className="mb-8">
-              Chúng tôi tập trung vào việc giúp học viên đạt điểm cao nhất trong
-              thời gian ngắn nhất thông qua phương pháp đào tạo hiện đại.
+              Chúng tôi đồng hành cùng học viên bằng lộ trình tinh gọn, phương pháp hiện đại và chiến thuật làm bài phù hợp với mục tiêu điểm số
+
             </p>
 
             <div className="space-y-8">

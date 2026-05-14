@@ -34,7 +34,7 @@ const STATS = [
 export default function WhyDETSection() {
   return (
     <section className="py-[96px] bg-primary text-white" id="why-det">
-      <div className="max-w-7xl mx-auto px-margin-desktop">
+      <div className="max-w-7xl px-6 mx-auto px-margin-desktop">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT */}
@@ -44,7 +44,7 @@ export default function WhyDETSection() {
             </h2>
 
             <p className="text-[18px] opacity-90 mb-8">
-              Lựa chọn thông minh cho hồ sơ du học hiện đại với lợi thế vượt trội.
+              Lựa chọn thông minh cho hồ sơ du học hiện đại với lợi thế vượt trội
             </p>
 
             <div className="space-y-8">

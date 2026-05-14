@@ -39,7 +39,7 @@ export default function FormSection() {
     <main className="max-w-7xl my-12 mx-auto w-full bg-white rounded-[40px] overflow-hidden flex flex-col md:flex-row shadow-lg">
 
       {/* ================= LEFT: SOCIAL PROOF ================= */}
-      <section className="w-full md:w-1/2 relative bg-brandLightBlue">
+      <section className="w-full px-6 w-full md:w-1/2 relative bg-brandLightBlue">
 
         <img
           src="
