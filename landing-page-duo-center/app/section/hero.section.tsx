@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const slide = {
   badge: "Mở lối tương lai",
-  title: "Cùng Duo Center chinh phục DET",
+  title: "Cùng Duo Center Chinh Phục DET",
   desc: (
     <>
       <strong>Duo Center</strong> đồng hành cùng học viên chinh phục{" "}
