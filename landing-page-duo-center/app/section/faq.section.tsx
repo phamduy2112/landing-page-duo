@@ -11,7 +11,9 @@ export default function FAQSection() {
   // ✅ mở mặc định câu đầu
 const [openIndex, setOpenIndex] = useState<number | null>(0);
   return (
-    <section className="bg-[#f2f4f6] w-full rounded-[40px] py-24">
+    <section
+    id="FAQ"
+    className="bg-[#f2f4f6] w-full rounded-[40px] py-24">
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 px-6">
 
@@ -24,7 +26,7 @@ const [openIndex, setOpenIndex] = useState<number | null>(0);
           <p className="text-gray-500">
             Giải đáp những câu hỏi phổ biến nhất trước khi học.
           </p>
-          {/* <img src="" alt="" /> */}
+          <img src="/scores.png" alt="Scores" />
         </div>
 
         {/* RIGHT */}
@@ -76,6 +78,16 @@ const [openIndex, setOpenIndex] = useState<number | null>(0);
               </div>
             );
           })}
+
+<div className="pt-4">
+  <a
+  target="_blank"
+    href="https://duolingocenter.edu.vn/faqs/"
+    className="inline-flex items-center gap-2 text-primary font-semibold hover:underline"
+  >
+    Xem thêm →
+  </a>
+</div>
 
         </div>
 

@@ -86,11 +86,15 @@ export default function CoursesSection() {
     >
       {/* TITLE */}
       <div className="flex justify-between items-end mb-8">
+        
 <div>
 <span className="text-primary text-[14px] font-[600] uppercase tracking-wider">Kiến thức chuyên sâu</span>
 <h2 className="text-[36px] mt-2 font-bold">Các khóa học</h2>
 </div>
-<a className="text-primary font-label-md flex items-center gap-2 hover:underline" href="#">Xem tất cả 
+<a className="text-primary font-label-md flex items-center gap-2 hover:underline" 
+target="_blank"
+
+href="https://duolingocenter.edu.vn/luyen-thi-det/">Xem tất cả 
 
   <BsArrowRight/>
 </a>
@@ -117,7 +121,7 @@ export default function CoursesSection() {
   >
     {/* IMAGE */}
     <Link 
-    href="{item.link}"
+    href={item.link}
     target="_blank"
     className="h-60 bg-gray-100">
       <img
@@ -167,7 +171,7 @@ export default function CoursesSection() {
 
       {/* BUTTON */}
       <Link
-      href="{item.link}"
+      href={item.link}
       target="_blank"
         className="mt-4 block w-full bg-primary text-white py-2 rounded-lg text-center hover:opacity-90"
 >

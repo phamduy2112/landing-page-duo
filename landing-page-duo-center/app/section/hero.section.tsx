@@ -60,6 +60,7 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Link from "next/link";
 const getShapeClass = (shape: string) => {
   switch (shape) {
     case "circle":
@@ -110,9 +111,11 @@ export default function HeroSection() {
                 </div>
 
                 <div className="flex gap-4">
-                  <button className="px-8 py-4 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition">
+                  <Link
+                  href="#form-section"
+                  className="px-8 py-4 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition">
                     Đăng Ký Tư Vấn Ngay
-                  </button>
+                  </Link>
 
                 
                 </div>
