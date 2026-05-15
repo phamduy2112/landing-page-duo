@@ -24,12 +24,12 @@ const VIDEOS = [
 
 export default function IntroVideoSection() {
   return (
-    <section className="py-16 bg-primary text-on-primary-fixed">
+    <section className="py-16 bg-primary text-on-primary-fixed rounded-4xl">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* TITLE */}
-        <h2 className="text-4xl font-bold mb-8 text-center text-white">
-          Giới Thiệu Trung Tâm
+        <h2 className="2xl:text-[35px] text-3xl font-bold mb-8 text-center text-white">
+          Giới Thiệu Trung Tâm Duo Center
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -89,7 +89,7 @@ export default function IntroVideoSection() {
               <Link
               
               href={"https://www.tiktok.com/@duolingo_center?fbclid=IwY2xjawRwxShleHRuA2FlbQIxMABicmlkETFWRUphNjF6cGVFcUxXaHE1c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmEyQgJYK8LW9-YGexjd33PEBVvfcBvPgmEd59aAKfw11Xkesi_Es37mh6O8_aem_YWdncwAnPcOwoHVw-8fcM9BZRKy8&brid=YWdncwFlJLXeqBtibylR8Uo9XnRx"}
-              className="bg-secondary block w-full text-center text-on-secondary px-6 py-4 rounded-lg font-label-md hover:bg-secondary-container transition-all">
+              className="bg-secondary block w-full text-center text-on-secondary px-6 py-4 rounded-[15px] font-label-md hover:bg-secondary-container transition-all">
                 Xem thêm
               </Link>
             </div>

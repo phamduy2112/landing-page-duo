@@ -13,13 +13,13 @@ const [openIndex, setOpenIndex] = useState<number | null>(0);
   return (
     <section
     id="FAQ"
-    className="bg-[#f2f4f6] w-full rounded-[40px] py-24">
+    className="bg-[#f2f4f6] w-full py-24">
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 px-6">
 
         {/* LEFT */}
         <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="2xl:text-[35px] text-3xl font-bold mb-4">
             Thắc Mắc Thường Gặp
           </h2>
 

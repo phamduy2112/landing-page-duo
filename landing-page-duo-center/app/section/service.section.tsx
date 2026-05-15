@@ -27,7 +27,7 @@ export default function ServicesSection() {
 
         {/* Title */}
         <div className="text-center mb-10">
-          <h2 className="text-[36px] font-bold">
+          <h2 className="2xl:text-[35px] text-3xl font-bold">
             Hệ sinh thái đào tạo toàn diện
           </h2>
         </div>

@@ -113,7 +113,9 @@ export default function HeroSection() {
                 <div className="flex gap-4">
                   <Link
                   href="#form-section"
-                  className="px-8 py-4 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition">
+                  className="px-8 
+                  animate-zoom
+                  py-4 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition">
                     Đăng Ký Tư Vấn Ngay
                   </Link>
 

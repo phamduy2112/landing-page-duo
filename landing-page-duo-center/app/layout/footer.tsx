@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-sm opacity-90">
               <li><a target="_blank" href="https://duolingocenter.edu.vn/about-us-duocenter/" className="hover:text-white">Về chúng tôi</a></li>
               <li><a  href="#FAQ" className="hover:text-white">FAQ's</a></li>
-              <li><a target="_blank" href="#FAQ" className="hover:text-white">Chính sách bảo mật</a></li>
+              <li><a  href="#FAQ" className="hover:text-white">Chính sách bảo mật</a></li>
             </ul>
           </div>
 

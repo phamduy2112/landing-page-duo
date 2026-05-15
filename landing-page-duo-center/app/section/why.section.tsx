@@ -6,40 +6,44 @@ import {
   FaGlobe,
   FaBolt,
   FaLaptop,
+  FaAward,
+  FaSmile,
+  FaChalkboardTeacher,
+  FaUserGraduate,
 } from "react-icons/fa";
 
 const STATS = [
   {
-    icon: FaCheckCircle,
-    value: "4500+",
-    label: "Trường chấp nhận",
+    icon: FaUserGraduate,
+    value: "2.2K",
+    label: "Học viên đã đăng ký",
   },
   {
-    icon: FaGlobe,
-    value: "Toàn cầu",
-    label: "Độ nhận diện",
+    icon: FaChalkboardTeacher,
+    value: "3.8K",
+    label: "Lớp học đã hoàn thành",
   },
   {
-    icon: FaBolt,
-    value: "1 Giờ",
-    label: "Thời gian làm bài",
+    icon: FaSmile,
+    value: "99%",
+    label: "Tỷ lệ hài lòng",
   },
   {
-    icon: FaLaptop,
-    value: "Online",
-    label: "Hình thức thi",
+    icon: FaAward,
+    value: "8+",
+    label: "Năm kinh nghiệm",
   },
 ];
 
 export default function WhyDETSection() {
   return (
-    <section className="py-[96px] bg-primary text-white" id="why-det">
+    <section className="py-[96px] bg-primary text-white rounded-3xl" id="why-det">
       <div className="max-w-7xl px-6 mx-auto px-margin-desktop">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
           {/* LEFT */}
           <div>
-            <h2 className="text-[35px] text-h1 mb-4 font-bold">
+            <h2 className="2xl:text-[35px] text-3xl mb-4 font-bold">
               Tại sao chọn DET?
             </h2>
 
@@ -51,7 +55,7 @@ export default function WhyDETSection() {
 
               {[
                 {
-                  title: "Chi phí tiết kiệm (Chỉ $59)",
+                  title: "Chi phí tiết kiệm",
                   percent: "Tiết kiệm 80%",
                 },
                 {

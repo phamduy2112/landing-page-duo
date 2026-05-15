@@ -24,7 +24,7 @@ const VALUES = [
 
 export default function CoreValueSection() {
   return (
-    <section className="py-[96px] bg-primary text-white" id="core-value">
+    <section className="py-[96px] bg-primary text-white rounded-3xl" id="core-value">
       <div className="max-w-7xl px-6 mx-auto px-margin-desktop">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -36,7 +36,7 @@ export default function CoreValueSection() {
               Lợi thế cạnh tranh
             </span>
 
-            <h2 className="text-[35px] font-bold mb-4">
+            <h2 className="2xl:text-[35px] text-3xl font-bold mb-4 mt-2">
               Giá trị cốt lõi tối ưu hóa kết quả
             </h2>
 
@@ -86,7 +86,7 @@ export default function CoreValueSection() {
             {/* FLOAT CARD */}
             <div className="absolute -bottom-8 -left-8 bg-secondary text-on-secondary-fixed p-8 rounded-xl shadow-xl hidden sm:block">
 
-              <p className="text-[35px] font-bold">125+</p>
+              <p className="text-3xl font-bold">125+</p>
 
               <p className="text-[14px]  tracking-wider font-bold">
                 Điểm trung bình học viên

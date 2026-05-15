@@ -41,7 +41,7 @@ export default function FormSection() {
     className="max-w-7xl my-12 mx-auto w-full bg-white rounded-[40px] overflow-hidden flex flex-col md:flex-row shadow-lg">
 
       {/* ================= LEFT: SOCIAL PROOF ================= */}
-      <section className="w-full px-6 md:w-1/2 relative bg-brandLightBlue">
+      <section className="w-full md:w-1/2 relative bg-brandLightBlue">
 
         <img
           src="
@@ -61,7 +61,7 @@ export default function FormSection() {
         {/* HEADER */}
         <div className="text-center mb-8">
 
-          <h1 className="text-3xl md:text-4xl font-extrabold text-red-600 mb-2">
+          <h1 className="2xl:text-[35px] text-3xl md:text-4xl font-bold text-red-600 mb-2">
             Ưu đãi hôm nay
           </h1>
 
@@ -162,7 +162,9 @@ export default function FormSection() {
             {/* SUBMIT */}
             <button
               type="submit"
-              className="w-full bg-primary text-white font-bold py-3 sm:py-4 rounded-full shadow-lg uppercase tracking-wide hover:scale-[1.02] active:scale-[0.98] transition"
+              className="w-full 
+              animate-zoom
+              bg-primary text-white font-bold py-3 sm:py-4 rounded-full shadow-lg uppercase tracking-wide hover:scale-[1.02] active:scale-[0.98] transition"
             >
               Nhận Tư Vấn Ngay
             </button>

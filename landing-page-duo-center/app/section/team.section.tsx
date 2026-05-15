@@ -75,7 +75,7 @@ export default function TeamSection() {
       <div className="flex justify-between items-end mb-8">
 
         <div>
-          <h2 className="text-3xl font-bold">
+          <h2 className="2xl:text-[35px] text-3xl font-bold">
             Giảng Viên Hàng Đầu
           </h2>
           <p className="text-gray-500 mt-2">

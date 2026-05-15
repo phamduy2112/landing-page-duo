@@ -61,7 +61,7 @@ export default function TestimonialsSection() {
 
         {/* TITLE */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold">
+          <h2 className="2xl:text-[35px] text-3xl font-bold">
             Học viên đạt điểm cao (100+, 120+, 130+)
           </h2>
           <p className="text-gray-500 mt-2">
