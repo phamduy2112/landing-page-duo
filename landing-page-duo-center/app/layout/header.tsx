@@ -5,9 +5,9 @@ import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const MENU = [
     { label: "Giới thiệu", href: "#infor" },
+  { label: "Lộ trình", href: "#services" },
 
   { label: "Khóa học", href: "#courses" },
-  { label: "Lộ trình", href: "#services" },
   { label: "Chuyên gia", href: "#tutors" },
   
 ];
