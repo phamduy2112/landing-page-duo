@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { FaClock, FaUser } from "react-icons/fa";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Link from "next/link";
@@ -38,7 +38,7 @@ const courses = [
     price:"6.500.000 VND",
     buoi: "24 buổi",
     user:"6 học viên",
-    desc: "Mục tiêu: Phát triển kỹ năng sử dụng tiếng Anh thành…",
+    desc: "Mục tiêu: Phát triển kỹ năng sử dụng tiếng Anh...",
   
     img: "./DET-Bai-Kiem-Tra-Tieng-Anh-Tien-Loi-Nhat-Hien-Nay-590x430.jpg",
     link:"https://duolingocenter.edu.vn/courses/level-3-power-up-76-85-score-target/"
@@ -102,7 +102,7 @@ href="https://duolingocenter.edu.vn/luyen-thi-det/">Xem tất cả
 
       {/* SWIPER */}
       <Swiper
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation,Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
@@ -111,6 +111,11 @@ href="https://duolingocenter.edu.vn/luyen-thi-det/">Xem tất cả
         }}
         pagination={{ clickable: true }}
         navigation
+          autoplay={{
+    delay: 2000, // 2 giây chuyển slide
+    disableOnInteraction: false, // user kéo vẫn chạy tiếp
+  }}
+  loop={true} // chạy vòng lặp
         className="pb-10 h-[600px]"
       >
         {courses.map((item, index) => (

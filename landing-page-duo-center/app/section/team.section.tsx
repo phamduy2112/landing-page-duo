@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
@@ -110,7 +110,7 @@ export default function TeamSection() {
 
       {/* SWIPER */}
       <Swiper
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation,Autoplay]}
         spaceBetween={20}
         slidesPerView={1}
         breakpoints={{
@@ -122,6 +122,12 @@ export default function TeamSection() {
           prevEl: ".teacher-prev",
           nextEl: ".teacher-next",
         }}
+
+             autoplay={{
+    delay: 2000, // 2 giây chuyển slide
+    disableOnInteraction: false, // user kéo vẫn chạy tiếp
+  }}
+  loop={true} // chạy vòng lặp
         onBeforeInit={(swiper) => {
           // Fix NextJS mount timing
           // @ts-ignore

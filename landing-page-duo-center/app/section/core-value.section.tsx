@@ -80,7 +80,7 @@ export default function CoreValueSection() {
               https://duolingocenter.edu.vn/wp-content/uploads/2026/01/IMG_4281-768x928.png
               "
               alt="Student studying for DET"
-              className="rounded-2xl shadow-2xl"
+              className="rounded-2xl shadow-2xl w-[100%] object-cover"
             />
 
             {/* FLOAT CARD */}

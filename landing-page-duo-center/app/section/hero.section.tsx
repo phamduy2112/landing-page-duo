@@ -1,169 +1,112 @@
 "use client";
-const getEffectClass = (shape: string) => {
-  switch (shape) {
-    case "circle":
-      return "rounded-full";
-    case "square":
-      return "rounded-none";
-    default:
-      return "rounded-[3rem]";
-  }
-};
 
-const slides = [
-{
+import Image from "next/image";
+import Link from "next/link";
+
+const slide = {
   badge: "Mở lối tương lai",
   title: "Cùng Duo Center chinh phục DET",
-  desc: "Duo Center đồng hành cùng học viên chinh phục Duolingo English Test bằng lộ trình tinh gọn, chiến thuật rõ ràng và mục tiêu điểm số cụ thể cho du học, xét tuyển và hồ sơ quốc tế.",
-  benefits: [
+  desc: (
+    <>
+      <strong>Duo Center</strong> đồng hành cùng học viên chinh phục{" "}
+      <strong>Duolingo English Test</strong> bằng lộ trình tinh gọn,
+      chiến thuật rõ ràng và mục tiêu điểm số cụ thể cho du học, xét tuyển
+      và hồ sơ quốc tế.
+    </>
+  ),  benefits: [
     "Lộ trình cá nhân hóa theo mục tiêu điểm",
     "Chiến thuật làm bài DET chuẩn quốc tế",
     "Tăng band nhanh với luyện đề thực chiến",
   ],
   image: "/duo-banner-1.png",
   shape: "circle",
-}
-  // {
-  //   badge: "LỘ TRÌNH HỌC IELTS CÙNG SMARTKIDS",
-  //   title: "CÁ NHÂN HÓA LỘ TRÌNH HỌC IELTS CÙNG SMARTKIDS",
-  //   desc: "Giúp trẻ tự tin giao tiếp và thể hiện bản thân",
-  //   benefits: [
-  //     "Lộ trình được cá nhân hóa - Phù hợp với mỗi học viên",
-  //     "Giáo viên tận tâm - Hỗ trợ từng bước tiến bộ",
-  //     "Học đúng trọng tâm - Bứt phá điểm số",
-  //     "Theo dõi & đánh giá tiến độ liên tục ",
-  //   ],
-  //   image: "/tuyensinh.png",
-  //       shape: "square", // 👈 vuông
+};
 
-  // },
-  // {
-  //   badge: "GIỚI THIỆU SMARTKIDS",
-  //   title: "SMARTKIDS HỌC THÔNG MINH  - VỮNG CHẮC TƯƠNG LAI",
-  //   desc: "Giúp trẻ tự tin giao tiếp và thể hiện bản thân",
-  //   benefits: [
-  //     "Trung tâm giáo dục chất lượng cao",
-  //     "Đa môn học: Toán – Lý – Hóa – Văn – Anh – Năng khiếu",
-  //     "Lớp nhóm nhỏ (~6 học sinh) - theo sát từng học viên",
-  //     "Hệ thống camera minh bạch – phụ huynh an tâm theo dõi",
-  //   ],
-  //   image: "/tuyensinh.png",
-  //       shape: "square", // 👈 vuông
-
-  // },
-];
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import {  Pagination, Autoplay } from "swiper/modules";
-import Image from "next/image";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import Link from "next/link";
 const getShapeClass = (shape: string) => {
   switch (shape) {
     case "circle":
-      return "w-[500px] h-[500px] rounded-full";
-    case "square":
-      return "w-full h-[500px] rounded-3xl";
+      return "w-[260px] h-[260px] sm:w-[360px] sm:h-[360px] lg:w-[500px] lg:h-[500px] rounded-full";
     default:
-      return "w-full h-[500px] rounded-3xl";
+      return "w-full h-[300px] lg:h-[500px] rounded-3xl";
   }
 };
 
-const getBgClass = (shape: string) => {
-  return shape === "circle" ? "rounded-full" : "rounded-3xl";
-};
+const getBgClass = (shape: string) =>
+  shape === "circle" ? "rounded-full" : "rounded-3xl";
+
 export default function HeroSection() {
   return (
-    <section className=" bg-gradient-to-b from-white to-[#faf7ff]">
-      <Swiper
-        modules={[ Pagination, Autoplay]}
-        autoplay={{ delay: 100000 }}
-        pagination={{ clickable: true }}
-        navigation
-        loop
-        className="max-w-7xl h-[800px] banner-smartkids"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center h-full">
+    <section
+      id="infor"
+      className="bg-gradient-to-b from-white to-[#faf7ff] py-14 lg:py-24 overflow-hidden"
+    >
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-              {/* LEFT */}
-              <div>
-                <span className="text-primary font-bold">
-                  {slide.badge}
-                </span>
+        {/* LEFT */}
+        <div className="mt-[40px] sm:mt-[0px] text-center lg:text-left">
 
-                <h1 className="text-5xl font-bold leading-tight mb-3">
-                  {slide.title}
-                </h1>
+          <span className="text-primary font-bold text-sm sm:text-base">
+            {slide.badge}
+          </span>
 
-                <p className="text-lg text-gray-600 mb-4">
-                  {slide.desc}
-                </p>
+          <h1 className="
+            font-bold leading-tight mt-2 mb-4
+            text-3xl
+            sm:text-4xl
+            lg:text-5xl
+          ">
+            {slide.title}
+          </h1>
 
-                <div className="space-y-2 text-gray-700 text-sm mb-8">
-                  {slide.benefits.map((item, i) => (
-                    <p key={i}>✔ {item}</p>
-                  ))}
-                </div>
+          <p className="text-gray-600 mb-6 text-sm sm:text-base lg:text-lg">
+            {slide.desc}
+          </p>
 
-                <div className="flex gap-4">
-                  <Link
-                  href="#form-section"
-                  className="px-8 
-                  animate-zoom
-                  py-4 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition">
-                    Đăng Ký Tư Vấn Ngay
-                  </Link>
+          <div className="space-y-2 text-gray-700 text-sm sm:text-base mb-8">
+            {slide.benefits.map((item, i) => (
+              <p key={i}>✔ {item}</p>
+            ))}
+          </div>
 
-                
-                </div>
-              </div>
+          <Link
+            href="#form-section"
+            className="inline-block px-7 py-3 sm:px-8 sm:py-4 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition"
+          >
+            Đăng Ký Tư Vấn Ngay
+          </Link>
 
-              {/* RIGHT IMAGE */}
-              <div className="relative flex justify-center items-center mt-20">
+        </div>
 
-  {/* Background */}
-  <div
-    className={`
-      absolute w-[460px] h-[460px] bg-primary/10
-      ${getBgClass(slide.shape)}
-    `}
-  />
+        {/* RIGHT IMAGE */}
+        <div className="relative flex justify-center items-center mt-6 lg:mt-20">
 
-  {/* Glow */}
-  <div
-    className={`
-      absolute w-[500px] h-[500px]
-      bg-primary/20 blur-3xl
-      ${getBgClass(slide.shape)}
-    `}
-  />
+          {/* Background */}
+          <div
+            className={`absolute w-[240px] h-[240px] sm:w-[320px] sm:h-[320px] lg:w-[460px] lg:h-[460px] bg-primary/10 ${getBgClass(
+              slide.shape
+            )}`}
+          />
 
-  {/* Image */}
-  <div
-    className={`
-      relative 
-      ${getShapeClass(slide.shape)}
-    `}
-  >
-    <Image
-      src={slide.image}
-      alt="banner"
-      fill
-      className="object-contain"
-    />
-  </div>
+          {/* Glow */}
+          <div
+            className={`absolute w-[280px] h-[280px] sm:w-[380px] sm:h-[380px] lg:w-[500px] lg:h-[500px] bg-primary/20 blur-3xl ${getBgClass(
+              slide.shape
+            )}`}
+          />
 
-</div>
+          {/* Image */}
+          <div className={`relative ${getShapeClass(slide.shape)}`}>
+            <Image
+              src={slide.image}
+              alt="banner"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
 
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        </div>
+      </div>
     </section>
   );
 }

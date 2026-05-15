@@ -11,8 +11,8 @@ const FEATURES = [
   },
   {
     icon: FaBolt,
-    title: "Hiệu quả",
-    desc: "Phương pháp học tối ưu giúp tiết kiệm thời gian và đạt mục tiêu nhanh.",
+    title: "Linh hoạt",
+    desc: "Đa dạng lớp học 1:1 và nhóm học online/ offline theo từng nhu cầu",
   },
   {
     icon: FaBullseye,
@@ -52,7 +52,7 @@ export default function FeaturesSection() {
         {item.title}
       </h3>
 
-      <p className="text-[17px] text-[#474747] opacity-90">
+      <p className="text-[16px] text-[#474747] opacity-90">
         {item.desc}
       </p>
     </div>

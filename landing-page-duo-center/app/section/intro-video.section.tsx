@@ -73,7 +73,7 @@ export default function IntroVideoSection() {
                 />
 
                 <div>
-                  <p className="text-sm font-medium line-clamp-1">
+                  <p className="text-sm font-bold line-clamp-1">
                     {item.title}
                   </p>
                   <p className="text-xs text-gray-500">
@@ -89,7 +89,7 @@ export default function IntroVideoSection() {
               <Link
               
               href={"https://www.tiktok.com/@duolingo_center?fbclid=IwY2xjawRwxShleHRuA2FlbQIxMABicmlkETFWRUphNjF6cGVFcUxXaHE1c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHmEyQgJYK8LW9-YGexjd33PEBVvfcBvPgmEd59aAKfw11Xkesi_Es37mh6O8_aem_YWdncwAnPcOwoHVw-8fcM9BZRKy8&brid=YWdncwFlJLXeqBtibylR8Uo9XnRx"}
-              className="bg-secondary block w-full text-center text-on-secondary px-6 py-4 rounded-[15px] font-label-md hover:bg-secondary-container transition-all">
+              className="bg-secondary block w-full text-center text-on-secondary font-bold px-6 py-4 rounded-[15px] font-label-md hover:bg-secondary-container transition-all">
                 Xem thêm
               </Link>
             </div>

@@ -47,39 +47,52 @@ export default function WhyDETSection() {
               Tại sao chọn DET?
             </h2>
 
-            <p className="text-[18px] opacity-90 mb-8">
+            <p className=" opacity-90 mb-8">
               Lựa chọn thông minh cho hồ sơ du học hiện đại với lợi thế vượt trội
             </p>
 
-            <div className="space-y-8">
+        <div className="space-y-4">
+{[
+  {
+    title: "Tiết kiệm chi phí",
+    desc: "Lệ phí dễ tiếp cận, phù hợp nhiều nhu cầu hồ sơ",
+  },
+  {
+    title: "Thi linh hoạt 24/7",
+    desc: "Thi online tại nhà, không cần đặt lịch phức tạp",
+  },
+  {
+    title: "Có kết quả nhanh",
+    desc: "Nhận kết quả trong khoảng 48 giờ",
+  },
+  {
+    title: "Bài thi tinh gọn",
+    desc: "Thời gian thi chỉ khoảng 1 giờ",
+  },
+  {
+    title: "Tạo dấu ấn cá nhân",
+    desc: "Video Interview giúp thể hiện cá tính với ban tuyển sinh",
+  },
+  {
+    title: "Được công nhận quốc tế",
+    desc: "Được nhiều trường tại Anh, Úc, Canada và các quốc gia khác chấp nhận",
+  },
+].map((item, i) => (
+  <div key={i} className="flex items-start gap-4">
+    <FaCheckCircle className="text-white  text-[20px] mt-[4px] shrink-0" />
 
-              {[
-                {
-                  title: "Chi phí tiết kiệm",
-                  percent: "Tiết kiệm 80%",
-                },
-                {
-                  title: "Thời gian có kết quả (48h)",
-                  percent: "Nhanh hơn 7 ngày",
-                },
-                {
-                  title: "Mức độ linh hoạt (Thi tại nhà)",
-                  percent: "Tối ưu 100%",
-                },
-              ].map((item, i) => (
-                <div key={i} className="space-y-2">
-                  <div className="flex justify-between text-[16px] font-bold">
-                    <span>{item.title}</span>
-                    <span>{item.percent}</span>
-                  </div>
+    <div>
+      <p className="font-semibold text-white text-[17px]">
+        {item.title}
+      </p>
+      <p className="opacity-80 text-[15px]">
+        {item.desc}
+      </p>
+    </div>
+  </div>
+))}
 
-                  <div className="h-3 bg-white/10 rounded-full overflow-hidden">
-                    <div className="h-full bg-[#F9D616] w-full opacity-90" />
-                  </div>
-                </div>
-              ))}
-
-            </div>
+  </div>
           </div>
 
           {/* RIGHT */}

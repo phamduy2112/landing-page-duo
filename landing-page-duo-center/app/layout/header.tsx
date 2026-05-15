@@ -4,10 +4,12 @@ import React, { useState, useEffect } from "react";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 const MENU = [
+    { label: "Giới thiệu", href: "#infor" },
+
   { label: "Khóa học", href: "#courses" },
-  { label: "Giới thiệu", href: "#why-det" },
+  { label: "Lộ trình", href: "#services" },
   { label: "Chuyên gia", href: "#tutors" },
-  { label: "Lộ trình", href: "#core-value" },
+  
 ];
 
 export default function Header() {

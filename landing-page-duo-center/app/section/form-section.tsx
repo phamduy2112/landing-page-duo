@@ -164,7 +164,9 @@ export default function FormSection() {
               type="submit"
               className="w-full 
               animate-zoom
-              bg-primary text-white font-bold py-3 sm:py-4 rounded-full shadow-lg uppercase tracking-wide hover:scale-[1.02] active:scale-[0.98] transition"
+              bg-primary text-white 
+              cursor-pointer
+              font-bold py-3 sm:py-4 rounded-full shadow-lg uppercase tracking-wide hover:scale-[1.02] active:scale-[0.98] transition"
             >
               Nhận Tư Vấn Ngay
             </button>
