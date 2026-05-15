@@ -70,7 +70,10 @@ export default function HeroSection() {
 
           <Link
             href="#form-section"
-            className="inline-block px-7 py-3 sm:px-8 sm:py-4 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition"
+            className="inline-block px-7 py-3
+            animate-zoom
+            cursor-pointer
+            sm:px-8 sm:py-4 rounded-full bg-primary text-white font-semibold shadow-lg hover:scale-105 transition"
           >
             Đăng Ký Tư Vấn Ngay
           </Link>
