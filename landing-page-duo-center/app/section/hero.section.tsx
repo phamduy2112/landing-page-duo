@@ -14,7 +14,7 @@ const slides = [
 {
   badge: "Mở lối tương lai",
   title: "Cùng Duo Center chinh phục DET",
-  desc: "Duolingo Center đồng hành cùng học viên chinh phục Duolingo English Test bằng lộ trình tinh gọn, chiến thuật rõ ràng và mục tiêu điểm số cụ thể cho du học, xét tuyển và hồ sơ quốc tế.",
+  desc: "Duo Center đồng hành cùng học viên chinh phục Duolingo English Test bằng lộ trình tinh gọn, chiến thuật rõ ràng và mục tiêu điểm số cụ thể cho du học, xét tuyển và hồ sơ quốc tế.",
   benefits: [
     "Lộ trình cá nhân hóa theo mục tiêu điểm",
     "Chiến thuật làm bài DET chuẩn quốc tế",

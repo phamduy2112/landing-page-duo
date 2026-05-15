@@ -23,7 +23,7 @@ const TESTIMONIALS = [
     img:"./360_F_531422204_Cqh3LXcugGWhkvr8uvTicqNQAR2ivAO8-removebg-preview-150x150.png",
     role: "Đạt 110 DET",
     text:
-      "Trước đây mình khá lo lắng về kỹ năng nói và viết, nhưng sau khóa học tại Duolingo Center, mình tự tin hơn rất nhiều. Đặc biệt, giáo viên luôn hỗ trợ chỉnh sửa chi tiết từng lỗi sai!",
+      "Trước đây mình khá lo lắng về kỹ năng nói và viết, nhưng sau khóa học tại Duo Center, mình tự tin hơn rất nhiều. Đặc biệt, giáo viên luôn hỗ trợ chỉnh sửa chi tiết từng lỗi sai!",
   },
   
   {

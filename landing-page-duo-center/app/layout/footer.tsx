@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
               <li><a 
               target="_blank"
               href="https://duolingocenter.edu.vn/purchase-guide/" className="hover:text-white">Hướng Dẫn Đăng Kí Khoá Học</a></li>
-              <li><a target="_blank" href="#tutors" className="hover:text-white">Giáo viên của Duolingo Center</a></li>
+              <li><a  href="#tutors" className="hover:text-white">Giáo viên của Duo Center</a></li>
             </ul>
           </div>
 
@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
       {/* ================= COPYRIGHT ================= */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-6 text-center text-sm opacity-90">
-          © {new Date().getFullYear()} Duolingo Center. Designed with Executive Precision.
+          © {new Date().getFullYear()} Duo Center. Designed with Executive Precision.
         </div>
       </div>
 

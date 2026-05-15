@@ -66,12 +66,12 @@ const courses = [
     link:"https://duolingocenter.edu.vn/courses/level-5-professional-96-105-score-target/"
   },
     {
-    title: "Level 6: Legendary (106-115+ DET Score Target)",
+    title: "Level 6: Legendary (106 - 115+ DET Score Target)",
     level: "All Levels",
     price:"7.500.000 VND",
     buoi: "24 buổi",
     user:"6 học viên",
-    desc: "Đạt điểm tối đa trong kỳ thi DET (106 - 115+). ",
+    desc: "Đạt điểm tối đa trong kỳ thi DET (106-115+). ",
   
     img: "./young-asian-female-student-sitting-table-writing-notebook-young-female-student-studying-library_44344-5762-590x379.avif",
     link:"https://duolingocenter.edu.vn/courses/level-6-legendary-106-115-score-target/"
