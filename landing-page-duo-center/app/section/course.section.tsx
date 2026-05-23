@@ -13,7 +13,7 @@ const courses = [
   {
     title: "Level 1: DET Kickstart (56 - 65 DET Score Target)",
     level: "All Levels",
-    price:"3.000.000 VND",
+    price:"6.000.000 VND",
     buoi: "24 buổi",
     user:"6 học viên",
     desc: "Xây dựng nền tảng tiếng Anh vững chắc để chuẩn…",

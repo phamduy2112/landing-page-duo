@@ -1,75 +1,52 @@
 "use client";
+
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import { FaStar } from "react-icons/fa";
+import { MdNavigateNext } from "react-icons/md";
+import { GrFormPrevious } from "react-icons/gr";
 
 const TESTIMONIALS = [
-  {
-    score: 135,
-    name: "Lê Khánh Linh",
-    img:"./360_F_531422204_Cqh3LXcugGWhkvr8uvTicqNQAR2ivAO8-removebg-preview-150x150.png",
-    role: "Đạt 100 DET",
-    text:
-      "Mình học khóa cấp tốc 1-1 và thấy cực kỳ hiệu quả! Lịch học linh hoạt, giáo viên giàu kinh nghiệm, lại còn được luyện tập với đề thi thử sát thực tế. Rất đáng để đầu tư!",
-  },
-  
-  {
-    score: 135,
-    name: "Trần Gia Bảo",
-    img:"./video-6-150x150.webp",
-    role: "Đạt 110 DET",
-    text:
-      "Trước đây mình khá lo lắng về kỹ năng nói và viết, nhưng sau khóa học tại Duo Center, mình tự tin hơn rất nhiều. Đặc biệt, giáo viên luôn hỗ trợ chỉnh sửa chi tiết từng lỗi sai!",
-  },
-  
-  {
-    score: 135,
-    name: "Minh Tú",
-    img:"./asian-female-university-student-isolated-transparent-background_177659-194-150x150.avif",
-    role: "Đạt 135 DET",
-    text:
-      "Em cần 120 để đi du học Mỹ nhưng chỉ còn 1 tháng. Nhờ lộ trình cấp tốc 1:1 tại Duo Center, em đã đạt 135 ngay lần đầu thi. Cảm ơn thầy cô rất nhiều!",
-  },
-  {
-    score: 95,
-    name: "Phạm Hoàng Nam ",
-    img:"./images-150x150.jpeg",
-    role: "Đạt 95 DET",
-    text:
-    "Điều mình ấn tượng nhất tại Duo Center là giáo trình rõ ràng và phương pháp học cực kỳ thực tế. Sau khóa học, mình không chỉ đạt 95 DET mà còn tự tin sử dụng tiếng Anh trong học tập",
-  },
-  
+  { img: "/review-01.jpg" },
+  { img: "/review-02.jpg" },
+  { img: "/review-03.jpg" },
+  { img: "/review-05.png" },
+  { img: "/review-06.png" },
 ];
 
-const Stars = () => (
-  <div className="flex gap-1 text-tertiary mb-4 text-amber-300">
-    {Array.from({ length: 5 }).map((_, i) => (
-      <FaStar key={i} size={18} />
-    ))}
-  </div>
-);
-
 export default function TestimonialsSection() {
-  return (
-    <section className="py-24 bg-gray-50" id="testimonials">
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const handlePrev = () => {
+    if (activeIndex === null) return;
+
+    setActiveIndex(
+      activeIndex === 0
+        ? TESTIMONIALS.length - 1
+        : activeIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    if (activeIndex === null) return;
+
+    setActiveIndex(
+      activeIndex === TESTIMONIALS.length - 1
+        ? 0
+        : activeIndex + 1
+    );
+  };
+
+  return (
+    <section className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
 
-        {/* TITLE */}
-        <div className="text-center mb-8">
-          <h2 className="2xl:text-[35px] text-3xl font-bold">
-            Học viên đạt điểm cao (100+, 120+, 130+)
-          </h2>
-          <p className="text-gray-500 mt-2">
-            Kết quả thực tế từ học viên Duo Center
-          </p>
-        </div>
-
-        {/* SWIPER */}
+        {/* SLIDER */}
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
           spaceBetween={20}
@@ -79,62 +56,111 @@ export default function TestimonialsSection() {
           autoplay={{ delay: 3000 }}
           breakpoints={{
             768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
           }}
           className="h-[300px]"
         >
-
           {TESTIMONIALS.map((item, index) => (
-            <SwiperSlide key={index} >
-
-              <div className="
-              
-              bg-white p-6 rounded-xl shadow-sm h-[250px] border border-gray-200 hover:shadow-md transition flex flex-col justify-between">
-
-                {/* TEXT */}
-                <div>
-
-                  <Stars />
-
-                  <p className="text-gray-600 italic leading-relaxed">
-                    “{item.text}”
-                  </p>
-
-                </div>
-
-                {/* USER */}
-                <div className="flex items-center gap-4 mt-6">
-
-                  {item.img ? (
-                    <img
-                      src={item.img}
-                      alt={item.name}
-                      className="w-12 h-12 rounded-full object-cover border border-gray-200"
-                    />
-                  ) : (
-                    <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600">
-                      {item.score}
-                    </div>
-                  )}
-
-                  <div>
-                    <p className="font-semibold">{item.name}</p>
-                    <p className="text-sm text-gray-500">
-                      {item.role}
-                    </p>
-                  </div>
-
-                </div>
-
+            <SwiperSlide key={index}>
+              <div
+                className="h-[260px] rounded-xl overflow-hidden cursor-pointer"
+                onClick={() => setActiveIndex(index)}
+              >
+                <img
+                  src={item.img}
+                  alt=""
+                  className="w-full h-full object-cover"
+                />
               </div>
-
             </SwiperSlide>
           ))}
-
         </Swiper>
 
-      </div>
+        {/* MODAL */}
+        {/* MODAL */}
+{activeIndex !== null && (
+  <div
+    className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+    onClick={() => setActiveIndex(null)}
+  >
 
+    {/* CLOSE */}
+    <button
+      onClick={() => setActiveIndex(null)}
+      className="absolute top-5 right-5 text-white text-5xl z-50 cursor-pointer"
+    >
+      ×
+    </button>
+
+    {/* IMAGE WRAPPER */}
+    <div
+      className="relative"
+      onClick={(e) => e.stopPropagation()}
+    >
+
+      {/* PREV */}
+      <button
+        onClick={handlePrev}
+        className="
+          absolute
+          left-4
+          top-1/2
+          -translate-y-1/2
+          bg-black/40
+          hover:bg-black/60
+          text-white
+          w-12
+          h-12
+          rounded-full
+          flex
+          items-center
+          justify-center
+          text-3xl
+          z-50
+          transition
+          cursor-pointer
+        "
+      >
+        <GrFormPrevious />
+      </button>
+
+      {/* IMAGE */}
+      <img
+        src={TESTIMONIALS[activeIndex].img}
+        alt=""
+        className="max-w-[90vw] max-h-[90vh] object-contain rounded-xl"
+      />
+
+      {/* NEXT */}
+      <button
+        onClick={handleNext}
+        className="
+          absolute
+          right-4
+          top-1/2
+          -translate-y-1/2
+          bg-black/40
+          hover:bg-black/60
+          text-white
+          w-12
+          h-12
+          rounded-full
+          flex
+          items-center
+          justify-center
+          text-3xl
+          z-50
+          transition
+          cursor-pointer
+        "
+      >
+        <MdNavigateNext />
+      </button>
+
+    </div>
+  </div>
+)}
+      </div>
     </section>
   );
 }
