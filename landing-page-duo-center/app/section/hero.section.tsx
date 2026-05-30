@@ -18,7 +18,7 @@ const slide = {
     "Chiến thuật làm bài DET chuẩn quốc tế",
     "Tăng band nhanh với luyện đề thực chiến",
   ],
-  image: "/duo-banner-1.png",
+  image: "/BeaComputerDuo@10x.png",
   shape: "circle",
 };
 
