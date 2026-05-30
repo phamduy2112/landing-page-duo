@@ -86,7 +86,7 @@ export default function IntroVideoSection() {
     {...(item.poster ? { poster: item.poster } : {})}
 
   muted
-  preload="auto"
+  preload="metadata"
   playsInline
   className="w-16 h-16 rounded object-cover"
   onLoadedData={(e) => {
