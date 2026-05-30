@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 
-const FAQS = [ { q: "Trường nào chấp nhận chứng chỉ Duolingo?", a: "Hiện có hơn 4500 trường đại học tại Mỹ, Úc, Canada và Việt Nam chấp nhận DET thay thế cho IELTS/TOEFL.", }, { q: "Khóa học kéo dài bao lâu?", a: "Tùy vào trình độ đầu vào và mục tiêu, thông thường từ 4 đến 8 tuần để đạt được kết quả bứt phá.", }, { q: "Duolingo English Test (DET) là gì?", a: "Duolingo English Test (DET) là một bài kiểm tra tiếng Anh trực tuyến được phát triển bởi Duolingo.", }, { q: "Kết quả của bài thi DET có giá trị trong bao lâu?", a: "Kết quả DET có giá trị trong 2 năm kể từ ngày thi.", }, { q: "Mất bao lâu để nhận được kết quả bài thi DET?", a: "Bạn sẽ nhận được kết quả trong vòng 48 giờ qua email.", }, ];
+const FAQS = [ { q: "Trường nào chấp nhận chứng chỉ Duolingo?", a: "Hiện có hơn 6000 trường đại học tại Mỹ, Úc, Canada và Việt Nam chấp nhận DET thay thế cho IELTS/TOEFL.", }, { q: "Khóa học kéo dài bao lâu?", a: "Tùy vào trình độ đầu vào và mục tiêu, thông thường từ 4 đến 8 tuần để đạt được kết quả bứt phá.", }, { q: "Duolingo English Test (DET) là gì?", a: "Duolingo English Test (DET) là một bài kiểm tra tiếng Anh trực tuyến được phát triển bởi Duolingo.", }, { q: "Kết quả của bài thi DET có giá trị trong bao lâu?", a: "Kết quả DET có giá trị trong 2 năm kể từ ngày thi.", }, { q: "Mất bao lâu để nhận được kết quả bài thi DET?", a: "Bạn sẽ nhận được kết quả trong vòng 48 giờ qua email.", }, ];
 
 export default function FAQSection() {
 

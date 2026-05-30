@@ -15,7 +15,7 @@ import Footer from "./layout/footer";
 
 export default function Home() {
   return (
-    <div className="bg-[#f2f4f6]">
+    <div className="bg-[#f2f4f6] text-[#000000]">
     <Header />
     <HeroSection/>
     <FeaturesSection/>
