@@ -6,19 +6,25 @@ import React, { useState } from "react";
 const VIDEOS = [
   {
     title: "Giới thiệu Duo Center",
-    src: "/video1.mp4",
+    src: "/video5.mp4",
   },
   {
     title: "Lớp học thực tế",
     src: "/video2.mp4",
+        poster: "/video2.png",
+
   },
   {
-    title: "Lớp học Online",
+    title: "Điểm Det là gì",
     src: "/video3.mp4",
   },
   {
-    title: "Hoạt động ngoại khóa",
-    src: "/video2.mp4",
+    title: "Thi online tại nhà",
+    src: "/video4.mp4",
+  },
+  {
+    title: "So sánh Det",
+    src: "/video1.mp4",
   },
 ];
 
@@ -77,15 +83,21 @@ export default function IntroVideoSection() {
   >
    <video
   src={item.src}
+    {...(item.poster ? { poster: item.poster } : {})}
+
   muted
-  preload="metadata"
+  preload="auto"
+  playsInline
   className="w-16 h-16 rounded object-cover"
+  onLoadedData={(e) => {
+    e.currentTarget.currentTime = 4;
+  }}
   onMouseEnter={(e) => {
     e.currentTarget.play().catch(() => {});
   }}
   onMouseLeave={(e) => {
     e.currentTarget.pause();
-    e.currentTarget.currentTime = 2;
+    e.currentTarget.currentTime = 4;
   }}
 />
 
